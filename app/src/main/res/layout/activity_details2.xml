@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ocdev.com.br.moview.Details">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="36sp"
+        android:paddingLeft="16dp"
+        android:background="#00796B"
+        android:textColor="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imgcartaz"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/titulo"
+        android:layout_toLeftOf="@+id/linearLayout"
+        android:layout_toStartOf="@+id/linearLayout"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/imgcartaz"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imgcartaz"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:text="@string/lancamento"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lancamento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="14dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="25dp"
+            android:text="@string/avaliacao"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/avaliacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lancamento"
+            android:layout_alignStart="@+id/lancamento"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="23dp"
+            android:text="TextView" />
+    </LinearLayout>
+</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imgcartaz"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="17dp"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:text="@string/sinopse"
+        android:id="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/sinopse"
+        android:layout_margin="16dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>
+</ScrollView>
